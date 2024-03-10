@@ -1,0 +1,61 @@
+@import '../../app.scss';
+.header {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  .search {
+    width: 80%;
+    display: flex;
+    gap: 15px;
+    @include mobile {
+      flex-direction: column;
+      width: 80%;
+      gap: 10px;
+      align-items: center;
+    }
+    input {
+      width: 85%;
+      font-size: 15px;
+      padding: 3px;
+      border-radius: 5px;
+      border: 0.5px solid lightgrey;
+      background-color: var(--el-color);
+      color: var(--color);
+      @include mobile {
+        width: 100%;
+      }
+    }
+
+    button {
+      width: 15%;
+      border-radius: 5px;
+      border: 0.5px solid lightgrey;
+      background-color: var(--el-color);
+      color: var(--color);
+      font-size: 15px;
+      padding: 3px;
+      @include mobile {
+        width: 100px;
+      }
+    }
+  }
+
+  .select {
+    width: 80%;
+  }
+
+  .reset {
+    width: 100px;
+    border-radius: 5px;
+    border: 0.5px solid lightgrey;
+    background-color: var(--el-color);
+    color: var(--color);
+    font-size: 15px;
+    padding: 3px;
+    font-weight: 500;
+  }
+}

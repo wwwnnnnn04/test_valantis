@@ -1,0 +1,26 @@
+@import '../../app.scss';
+.box {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  .container {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    @include mobile {
+      width: 90%;
+    }
+    button {
+      width: 17%;
+      height: 30px;
+      border-radius: 5px;
+      border: 0.5px solid lightgrey;
+      background-color: var(--el-color);
+      color: var(--color);
+      @include mobile {
+        font-size: 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+:root {
+  --color: #010101;
+  --bg-color: #566b32;
+  --el-color: #ffeeda;
+}
+@mixin mobile {
+  @media (max-width: 738px) {
+    @content;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--color);
+}
+.app {
+  width: 60vw;
+  margin: auto;
+  @include mobile {
+    width: 100vw;
+  }
+}
